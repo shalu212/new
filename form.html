@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>My Form</title>
+ </head>
+ <body>
+   <h1>My Form</h1>
+   <form method="post" enctype="multipart/form-data">
+     {{ form.csrf_token }} {{ form.string_field.label }} {{ form.string_field()
+     }}<br />
+     {{ form.textarea_field.label }} {{ form.textarea_field() }}<br />
+     {{ form.password_field.label }} {{ form.password_field() }}<br />
+     {{ form.integer_field.label }} {{ form.integer_field() }}<br />
+     {{ form.decimal_field.label }} {{ form.decimal_field() }}<br />
+     {{ form.boolean_field.label }} {{ form.boolean_field() }}<br />
+     {{ form.date_field.label }} {{ form.date_field() }}<
+     <br />
+     {{ form.datetime_field.label }} {{ form.datetime_field() }}<br />
+     {{ form.select_field.label }} {{ form.select_field() }}<br />
+     {{ form.select_multiple_field.label }} {{ form.select_multiple_field()
+     }}<br />
+     {{ form.file_field.label }} {{ form.file_field() }}<br />
+     {{ form.hidden_field.label }} {{ form.hidden_field() }}<br />
+     {{ form.submit_field() }}<br />
+   </form>
+ </body>
+</html>
